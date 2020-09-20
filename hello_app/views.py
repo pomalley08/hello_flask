@@ -1,9 +1,7 @@
-from flask import Flask
 from datetime import datetime
-import re
-from flask import render_template
+from flask import Flask, render_template
+from . import app
 
-app = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -30,5 +28,5 @@ def hello_there(name = None):
 def get_data():
     return app.send_static_file("data.json")
 
-print('http://127.0.0.1:5000/hello/pal')
+print('http://127.0.0.1:5000/hello/flask')
 print('http://127.0.0.1:5000/api/data')
