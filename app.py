@@ -18,4 +18,9 @@ def hello_there(name = None):
         date=datetime.now()
     )
 
+@app.route("/api/data")
+def get_data():
+    return app.send_static_file("data.json")
+
 print('http://127.0.0.1:5000/hello/pal')
+print('http://127.0.0.1:5000/api/data')
