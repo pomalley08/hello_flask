@@ -1,5 +1,6 @@
 {
     "01": {
-      "note": "This data is very simple because we're demonstrating only the mechanism."
+      "note": "This data is very simple because we're demonstrating only the mechanism.",
+      "note2": "some more data"
     }
   }
